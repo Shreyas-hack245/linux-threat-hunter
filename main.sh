@@ -1,24 +1,34 @@
 #!/bin/bash
 
+# Colors
+RED="\e[31m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+BLUE="\e[34m"
+CYAN="\e[36m"
+RESET="\e[0m"
+
 clear
 
-echo "=========================================="
-echo "        Linux Threat Hunter"
-echo "=========================================="
-echo " Blue Team Threat Hunting Toolkit"
-echo "=========================================="
+echo -e "${CYAN}"
+echo "================================================="
+echo "            LINUX THREAT HUNTER"
+echo "================================================="
+echo -e "${RESET}"
 
-echo ""
-echo "[1] Process Scan"
-echo "[2] Failed Login Detection"
-echo "[3] Open Ports Scanner"
-echo "[4] Hidden Files Detection"
-echo "[5] Cron Persistence Detection"
-echo "[6] Network Connections Monitoring"
-echo "[7] Run Full Scan"
-echo "[0] Exit"
+echo -e "${GREEN} Blue Team Threat Hunting Toolkit ${RESET}"
 echo ""
 
+echo -e "${YELLOW}[1]${RESET} Process Scan"
+echo -e "${YELLOW}[2]${RESET} Failed Login Detection"
+echo -e "${YELLOW}[3]${RESET} Open Ports Scanner"
+echo -e "${YELLOW}[4]${RESET} Hidden Files Detection"
+echo -e "${YELLOW}[5]${RESET} Cron Persistence Detection"
+echo -e "${YELLOW}[6]${RESET} Network Connections Monitoring"
+echo -e "${YELLOW}[7]${RESET} Run Full Scan"
+echo -e "${RED}[0]${RESET} Exit"
+
+echo ""
 read -p "Select an option: " choice
 
 case $choice in
@@ -41,7 +51,7 @@ case $choice in
         ./scripts/network_connections.sh
         ;;
     7)
-        echo "[+] Running Full Threat Hunt..."
+        echo -e "${BLUE}[+] Running Full Threat Hunt...${RESET}"
 
         ./scripts/process_scan.sh
         ./scripts/failed_logins.sh
@@ -51,9 +61,9 @@ case $choice in
         ./scripts/network_connections.sh
         ;;
     0)
-        echo "Exiting..."
+        echo -e "${RED}Exiting...${RESET}"
         ;;
     *)
-        echo "Invalid option"
+        echo -e "${RED}Invalid option${RESET}"
         ;;
 esac
