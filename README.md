@@ -112,4 +112,25 @@ Run the toolkit:
 | System Information | Collect host system information |
 
 ---
+## Dashboard Preview
+
+Add screenshots of the toolkit interface inside the `screenshots/` directory and reference them here.
+
+```markdown
+![Dashboard](screenshots/dashboard.png)
+```
+
+---
+
+## Future Enhancements
+
+- JSON Report Generation
+- Email Alert System
+- SIEM Integration
+- Threat Intelligence Support
+- File Integrity Monitoring
+- Real-Time Alerting
+- Web-Based Dashboard
+
+---
 
