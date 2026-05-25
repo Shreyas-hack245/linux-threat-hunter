@@ -133,4 +133,13 @@ Add screenshots of the toolkit interface inside the `screenshots/` directory and
 - Web-Based Dashboard
 
 ---
+## Disclaimer
+
+This project is intended strictly for educational purposes and authorized security testing only.
+
+---
+
+## Author
+
+Shreyas
 
