@@ -1,0 +1,147 @@
+========== Linux Threat Hunter Report ==========
+Generated: Mon May 25 01:14:02 AM EDT 2026
+
+======================================
+ Suspicious Process Scanner
+======================================
+[+] Top Running Processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+snicker+   24694  100  0.2   9540  4528 pts/0    R+   01:14   0:00 ps aux --sort=-%cpu
+root         798  7.6  8.8 456168 178408 tty7    Rsl+ 00:36   2:49 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+snicker+    1231  1.4  5.8 1104916 118532 ?      Sl   00:37   0:31 xfwm4
+snicker+    1666  1.1  1.5 1124788 31540 ?       Sl   00:37   0:25 nm-applet
+snicker+    1351  0.9  1.3 300772 28208 ?        Sl   00:37   0:20 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libcpugraph.so 13 25165836 cpugraph CPU Graph Graphical representation of the CPU load
+snicker+   10436  0.8  3.4 668220 68852 ?        Sl   00:50   0:12 /usr/bin/qterminal
+snicker+    1353  0.6  1.1 277100 23892 ?        Sl   00:37   0:13 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libgenmon.so 15 25165838 genmon Generic Monitor Show output of a command.
+snicker+    1292  0.5  2.6 1118136 54272 ?       Sl   00:37   0:12 xfdesktop
+root          56  0.4  0.0      0     0 ?        I    00:36   0:10 [kdamond.0]
+
+[+] Processes Running as Root:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.7  24612 15352 ?        Ss   00:36   0:01 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    00:36   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    00:36   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-netns]
+root          12  0.0  0.0      0     0 ?        I    00:36   0:00 [kworker/u8:0-ipv6_addrconf]
+root          13  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        S    00:36   0:00 [ksoftirqd/0]
+root          15  0.1  0.0      0     0 ?        I    00:36   0:02 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    00:36   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          17  0.0  0.0      0     0 ?        S    00:36   0:00 [rcu_exp_gp_kthread_worker]
+root          18  0.0  0.0      0     0 ?        S    00:36   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    00:36   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    00:36   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    00:36   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    00:36   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    00:36   0:00 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    00:36   0:00 [ksoftirqd/1]
+root          27  0.0  0.0      0     0 ?        I    00:36   0:00 [kworker/u9:0-flush-8:0]
+root          30  0.0  0.0      0     0 ?        I    00:36   0:01 [kworker/u10:1-ext4-rsv-conversion]
+root          31  0.0  0.0      0     0 ?        S    00:36   0:00 [kdevtmpfs]
+root          32  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-inet_frag_wq]
+root          33  0.0  0.0      0     0 ?        I    00:36   0:00 [rcu_tasks_kthread]
+root          34  0.0  0.0      0     0 ?        I    00:36   0:00 [rcu_tasks_rude_kthread]
+root          35  0.0  0.0      0     0 ?        I    00:36   0:00 [rcu_tasks_trace_kthread]
+root          36  0.0  0.0      0     0 ?        S    00:36   0:00 [kauditd]
+root          37  0.0  0.0      0     0 ?        S    00:36   0:00 [khungtaskd]
+root          38  0.0  0.0      0     0 ?        S    00:36   0:00 [oom_reaper]
+root          39  0.0  0.0      0     0 ?        I    00:36   0:00 [kworker/u9:1-kvfree_rcu_reclaim]
+root          40  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-writeback]
+root          42  0.1  0.0      0     0 ?        S    00:36   0:03 [kcompactd0]
+root          43  0.0  0.0      0     0 ?        SN   00:36   0:00 [ksmd]
+root          44  0.1  0.0      0     0 ?        SN   00:36   0:02 [khugepaged]
+root          45  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-kblockd]
+root          46  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-blkcg_punt_bio]
+root          47  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-kintegrityd]
+root          48  0.0  0.0      0     0 ?        S    00:36   0:00 [irq/9-acpi]
+root          50  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-tpm_dev_wq]
+root          51  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-edac-poller]
+root          52  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-devfreq_wq]
+root          53  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-quota_events_unbound]
+root          55  0.2  0.0      0     0 ?        S    00:36   0:04 [kswapd0]
+root          56  0.4  0.0      0     0 ?        I    00:36   0:10 [kdamond.0]
+root          59  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-kthrotld]
+root          60  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-acpi_thermal_pm]
+root          61  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-mld]
+root          63  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-ipv6_addrconf]
+root          64  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-kstrp]
+root          65  0.0  0.0      0     0 ?        I    00:36   0:00 [kworker/u8:1-netns]
+root          74  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/u11:0]
+root          75  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/u12:0-ttm]
+root          76  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/u13:0-ttm]
+root         168  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/0:1H-kblockd]
+root         202  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-ata_sff]
+root         203  0.0  0.0      0     0 ?        S    00:36   0:00 [scsi_eh_0]
+root         204  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-scsi_tmf_0]
+root         205  0.0  0.0      0     0 ?        S    00:36   0:00 [scsi_eh_1]
+root         206  0.0  0.0      0     0 ?        S    00:36   0:00 [irq/18-vmwgfx]
+root         207  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-scsi_tmf_1]
+root         209  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-ttm]
+root         210  0.0  0.0      0     0 ?        S    00:36   0:00 [scsi_eh_2]
+root         211  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-scsi_tmf_2]
+root         248  0.0  0.0      0     0 ?        S    00:36   0:00 [jbd2/sda1-8]
+root         249  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-ext4-rsv-conversion]
+root         304  0.0  0.0      0     0 ?        S    00:36   0:00 [psimon]
+root         314  0.0  1.1  66812 23440 ?        Ss   00:36   0:01 /usr/lib/systemd/systemd-journald
+root         353  0.0  0.5  38092 11700 ?        Ss   00:36   0:00 /usr/lib/systemd/systemd-udevd
+root         355  0.0  0.3  16108  6656 ?        Ss   00:36   0:00 /usr/lib/systemd/systemd-userdbd
+root         359  0.0  0.0      0     0 ?        S    00:36   0:00 [psimon]
+root         361  0.0  0.0      0     0 ?        S    00:36   0:00 [psimon]
+root         417  0.0  0.2   8388  5128 ?        Ss   00:36   0:00 /usr/sbin/haveged --Foreground --verbose=1
+root         427  0.0  0.4 309968  8540 ?        Ssl  00:36   0:00 /usr/libexec/accounts-daemon
+root         439  0.0  0.4  17984  9100 ?        Ss   00:36   0:00 /usr/lib/systemd/systemd-logind
+root         528  0.0  0.6 391344 13084 ?        Ssl  00:36   0:00 /usr/sbin/ModemManager
+root         545  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-rpciod]
+root         547  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-xprtiod]
+root         552  0.0  0.1   6876  2964 ?        Ss   00:36   0:00 /usr/sbin/cron -f
+root         573  0.2  0.1 352936  2920 ?        Sl   00:36   0:04 /usr/bin/VBoxDRMClient
+root         581  0.0  0.1 291744  3592 ?        Sl   00:36   0:01 /usr/sbin/VBoxService
+root         647  0.1  0.9 336716 18656 ?        Ssl  00:36   0:02 /usr/sbin/NetworkManager --no-daemon
+root         651  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/u13:1]
+root         780  0.0  0.3 389232  7608 ?        SLsl 00:36   0:00 /usr/sbin/lightdm
+root         782  0.0  0.3  11780  7920 ?        Ss   00:36   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root         785  0.2  1.4 1491492 28692 ?       Ssl  00:36   0:06 /usr/bin/containerd
+root         797  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/u12:1-ttm]
+root         798  7.6  8.8 456168 178408 tty7    Ssl+ 00:36   2:49 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root         800  0.0  0.1   8152  2564 tty1     Ss+  00:36   0:00 /usr/sbin/agetty --noreset --noclear --issue-file=/etc/issue:/etc/issue.d:/run/issue.d:/usr/lib/issue.d - linux
+root        1001  0.0  0.5 173004 10860 ?        Sl   00:37   0:00 lightdm --session-child 13 24
+root        1406  0.1  0.5 318796 10864 ?        Ssl  00:37   0:03 /usr/libexec/upowerd
+root        1780  0.0  0.6 478300 13380 ?        Ssl  00:37   0:00 /usr/libexec/udisks2/udisksd
+root        2391  0.1  2.5 1612232 52280 ?       Ssl  00:37   0:03 /usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root        3838  0.0  0.0   2592  2016 ?        Ss   00:39   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+root        6989  0.0  0.0      0     0 ?        I<   00:44   0:00 [kworker/1:0H]
+root        7504  0.0  0.0      0     0 ?        I<   00:45   0:01 [kworker/0:0H-kblockd]
+root        9735  0.0  0.0      0     0 ?        I    00:49   0:00 [kworker/u10:0-events_unbound]
+root       11761  0.1  0.0      0     0 ?        I    00:52   0:01 [kworker/0:1-ata_sff]
+root       12565  0.0  0.0      0     0 ?        I    00:53   0:00 [kworker/1:1-events_power_efficient]
+root       14833  0.0  0.0      0     0 ?        I<   00:57   0:00 [kworker/1:2H-kblockd]
+root       15056  0.0  0.0      0     0 ?        I    00:57   0:00 [kworker/u9:2-events_unbound]
+root       18905  0.0  0.0      0     0 ?        I    01:04   0:00 [kworker/1:0-events]
+root       19841  0.0  0.0      0     0 ?        I    01:05   0:00 [kworker/0:2-ata_sff]
+root       22897  0.0  0.0      0     0 ?        I    01:10   0:00 [kworker/u10:2-flush-8:0]
+root       22898  0.1  0.0      0     0 ?        I    01:10   0:00 [kworker/0:0-events]
+root       24040  0.0  0.3  16552  6720 ?        S    01:12   0:00 systemd-userwork: waiting...
+root       24315  0.0  0.3  16552  6720 ?        S    01:13   0:00 systemd-userwork: waiting...
+root       24348  0.0  0.0      0     0 ?        I    01:13   0:00 [kworker/1:2]
+root       24349  0.0  0.0      0     0 ?        I    01:13   0:00 [kworker/u8:2]
+root       24452  0.0  0.3  16552  7112 ?        S    01:13   0:00 systemd-userwork: waiting...
+
+[+] Suspicious Processes:
+root           5  0.0  0.0      0     0 ?        I<   00:36   0:00 [kworker/R-sync_wq]
+snicker+    1041  0.0  0.2   8832  4100 ?        Ss   00:37   0:00 /usr/bin/dbus-broker-launch --scope user
+snicker+    1195  0.0  0.3 381248  7916 ?        Ssl  00:37   0:00 /usr/libexec/at-spi-bus-launcher
+snicker+    1201  0.0  0.1   8832  3952 ?        S    00:37   0:00 /usr/bin/dbus-broker-launch --config-file=/usr/share/defaults/at-spi2/accessibility.conf --scope user
+
+[+] Scan Completed
+
+======================================
+ Failed Login Detection
+======================================
+[+] Failed SSH Login Attempts:
+May 15 22:57:37 kali sshd-session[8451]: Failed password for snickerdoodle from 192.168.1.2 port 60152 ssh2
+
+[+] Invalid User Attempts:
