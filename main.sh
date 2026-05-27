@@ -184,6 +184,12 @@ case $choice in
         echo -e "${GREEN}[+] Report Saved:${RESET} $REPORT"
 
         echo "$(date) - Full Threat Hunt Executed" >> logs/activity.log
+            echo ""
+echo "========== Threat Summary =========="
+echo "HIGH Threats   : $HIGH"
+echo "MEDIUM Threats : $MEDIUM"
+echo "LOW Threats    : $LOW"
+echo "===================================="
 
         ;;
 
