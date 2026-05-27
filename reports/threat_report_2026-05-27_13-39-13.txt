@@ -1,0 +1,255 @@
+========== Linux Threat Hunter Report ==========
+Generated: Wed May 27 01:39:18 PM EDT 2026
+
+
+======================================
+ Failed Login Detection
+======================================
+[+] Failed SSH Login Attempts:
+May 15 22:57:37 kali sshd-session[8451]: Failed password for snickerdoodle from 192.168.1.2 port 60152 ssh2
+
+[+] Invalid User Attempts:
+
+[+] Authentication Failures:
+Oct 29 12:17:16 kali sudo[2236]: pam_unix(sudo:auth): authentication failure; logname=kali uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=kali
+Oct 30 04:28:42 kali lightdm[797]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=kali
+Nov 07 00:28:32 kali sudo[1569]: pam_unix(sudo:auth): authentication failure; logname=kali uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=kali
+Nov 19 11:17:28 kali sudo[12001]: pam_unix(sudo:auth): authentication failure; logname=kali uid=1000 euid=0 tty=/dev/pts/3 ruser=kali rhost=  user=kali
+Nov 19 12:02:32 kali xfce4-screensaver-dialog[31535]: pam_unix(xfce4-screensaver:auth): authentication failure; logname=kali uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=kali
+Nov 29 10:32:49 kali sudo[2299]: pam_unix(sudo:auth): authentication failure; logname=kali uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=kali
+Nov 29 10:53:35 kali xfce4-screensaver-dialog[11968]: pam_unix(xfce4-screensaver:auth): authentication failure; logname=kali uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=kali
+Dec 22 11:14:02 kali xfce4-screensaver-dialog[14008]: pam_unix(xfce4-screensaver:auth): authentication failure; logname=kali uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=kali
+Dec 27 02:55:42 kali xfce4-screensaver-dialog[5225]: pam_unix(xfce4-screensaver:auth): authentication failure; logname=kali uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=kali
+Dec 27 03:36:38 kali sudo[2197]: pam_unix(sudo:auth): authentication failure; logname=kali uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=kali
+Dec 27 03:43:34 kali lightdm[7715]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Dec 27 11:48:21 kali lightdm[1075]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=snickerdoodle
+Dec 27 11:48:30 kali lightdm[1078]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=snickerdoodle
+Dec 28 09:45:11 kali xfce4-screensaver-dialog[30693]: pam_unix(xfce4-screensaver:auth): authentication failure; logname=snickerdoodle uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=snickerdoodle
+Dec 28 11:16:47 kali lightdm[1095]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=snickerdoodle
+Jan 07 01:47:42 kali lightdm[1096]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jan 09 20:39:32 kali lightdm[1099]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jan 09 20:39:38 kali lightdm[1102]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jan 10 08:10:11 kali lightdm[1149]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=snickerdoodle
+Jan 19 09:15:34 kali sudo[9296]: pam_unix(sudo:auth): authentication failure; logname=snickerdoodle uid=1000 euid=0 tty=/dev/pts/0 ruser=snickerdoodle rhost=  user=snickerdoodle
+Feb 11 11:12:28 kali lightdm[1081]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Feb 15 07:01:50 kali sudo[10091]: pam_unix(sudo:auth): authentication failure; logname=snickerdoodle uid=1000 euid=0 tty=/dev/pts/0 ruser=snickerdoodle rhost=  user=snickerdoodle
+Feb 17 01:38:22 kali xfce4-screensaver-dialog[24048]: pam_unix(xfce4-screensaver:auth): authentication failure; logname=snickerdoodle uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=snickerdoodle
+Mar 18 14:07:02 kali lightdm[1211]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Mar 18 14:07:07 kali lightdm[1213]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+May 15 22:57:36 kali sshd-session[8451]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.2  user=snickerdoodle
+May 16 03:42:56 kali xfce4-screensaver-dialog[129395]: pam_unix(xfce4-screensaver:auth): authentication failure; logname=snickerdoodle uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=snickerdoodle
+May 20 01:14:39 kali lightdm[999]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=snickerdoodle
+May 27 12:31:49 kali lightdm[1214]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=snickerdoodle
+
+======================================
+ Open Ports Scanner
+======================================
+[+] Listening Ports:
+Netid State  Recv-Q Send-Q                    Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0      [fe80::ffac:23c7:f5b1:fb97]%eth0:546           [::]:*          
+tcp   LISTEN 0      4096                          127.0.0.1:40907      0.0.0.0:*          
+tcp   LISTEN 0      128                             0.0.0.0:22         0.0.0.0:*          
+tcp   LISTEN 0      128                                [::]:22            [::]:*          
+
+[+] Established Connections:
+
+[+] Processes Using Network Ports:
+
+======================================
+ Hidden Files Detection
+======================================
+[+] Hidden Files in /home:
+/home/snickerdoodle/.vboxclient-clipboard-tty7-service.pid
+/home/snickerdoodle/.local/share/gem/ruby/3.3.0/gems/zsteg-0.2.14/tmp/.keep
+/home/snickerdoodle/.local/share/gem/ruby/3.3.0/gems/iostruct-0.7.0/spec/.rubocop.yml
+/home/snickerdoodle/.local/share/gem/ruby/3.3.0/gems/iostruct-0.7.0/.gitignore
+/home/snickerdoodle/.local/share/gem/ruby/3.3.0/gems/iostruct-0.7.0/.ruby-version
+/home/snickerdoodle/.local/share/gem/ruby/3.3.0/gems/iostruct-0.7.0/.rspec
+/home/snickerdoodle/.local/share/gem/ruby/3.3.0/gems/iostruct-0.7.0/.rubocop.yml
+/home/snickerdoodle/.local/share/gem/ruby/3.3.0/gems/zpng-0.4.6/.document
+/home/snickerdoodle/.local/share/gem/ruby/3.3.0/gems/zpng-0.4.6/.rspec
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/permanent/chrome/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/permanent/indexeddb+++fx-devtools/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++angryip.org/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++learn.snyk.io/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++arena.yukthictf.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++app.hackthebox.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.aperisolve.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Cmedium.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Cwallpapers.com%29/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Cwallpapers.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.perplexity.ai/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.perplexity.ai/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.dcode.fr/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.dcode.fr/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++medium.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Cgoogle.com%29/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Cgoogle.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++wily-courier.picoctf.net+55193/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++wily-courier.picoctf.net+55193/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++cdn.jsdelivr.net^partitionKey=%28https%2Cvishwas1.github.io%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Chackthebox.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.exploit-db.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/about+newtab/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/about+newtab/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/moz-extension+++fb09f34a-9803-4489-bc49-fddd74dc6d87^userContextId=4294967295/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++gchq.github.io/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.youtube.com/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.youtube.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++crystal-peak.picoctf.net+64718/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++crystal-peak.picoctf.net+64718/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.intigriti.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++rescued-float.picoctf.net+55485/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++rescued-float.picoctf.net+55485/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++onlinehashtools.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++wallpapers.com/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++wallpapers.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++portswigger.net/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Chackthebox.com%29/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Chackthebox.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++wily-courier.picoctf.net+56097/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++wily-courier.picoctf.net+56097/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++154.57.164.73+32445/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++154.57.164.73+32445/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Cjwt.io%29/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Cjwt.io%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++tinder.com/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++tinder.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.metadata2go.com/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.metadata2go.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.jwt.io/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++atlas.picoctf.net+50382/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++atlas.picoctf.net+50382/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.rapidtables.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cgoogle.com%29/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cgoogle.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++login.mars.picoctf.net/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++login.mars.picoctf.net/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Cwallpapersafari.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Crot13.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++challenges.cloudflare.com^partitionKey=%28https%2Cperplexity.ai%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++saturn.picoctf.net+58170/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++saturn.picoctf.net+58170/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.base64decode.org/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.base64decode.org/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++fickle-tempest.picoctf.net+62198/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++fickle-tempest.picoctf.net+62198/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Cangryip.org%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Cstackexchange.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/moz-extension+++fb09f34a-9803-4489-bc49-fddd74dc6d87/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++192.168.1.1/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Cmetadata2go.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++29a.ch/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++29a.ch/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++onetag-sys.com^partitionKey=%28https%2Cbase64decode.org%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++unix.stackexchange.com/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++unix.stackexchange.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++foggy-cliff.picoctf.net+51175/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++foggy-cliff.picoctf.net+51175/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cportswigger.net%29/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cportswigger.net%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++account.hackthebox.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++crypto-11.vercel.app/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++crypto-11.vercel.app/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++fickle-tempest.picoctf.net+60043/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++fickle-tempest.picoctf.net+60043/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Cintigriti.com%29/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.googletagmanager.com^partitionKey=%28https%2Cintigriti.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++wallpapersafari.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++verbal-sleep.picoctf.net+50459/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++verbal-sleep.picoctf.net+50459/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++hs.hackthebox.com/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Cdcode.fr%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++www.google.com^partitionKey=%28https%2Caperisolve.com%29/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++isfcr-big-boos.chals.io/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++isfcr-big-boos.chals.io/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++wily-courier.picoctf.net+51992/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/http+++wily-courier.picoctf.net+51992/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++token.dev/cache/.padding
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++token.dev/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/storage/default/https+++blog.1nf1n1ty.team/.metadata-v2
+/home/snickerdoodle/.mozilla/firefox/mkhj1jtf.default-esr/.parentlock
+/home/snickerdoodle/.xsession-errors.old
+/home/snickerdoodle/.dmrc
+/home/snickerdoodle/.python_history
+/home/snickerdoodle/.1.txt.swp
+/home/snickerdoodle/venv_ctf/.gitignore
+/home/snickerdoodle/venv_ctf/lib/python3.13/site-packages/numpy/f2py/tests/src/assumed_shape/.f2py_f2cmap
+/home/snickerdoodle/venv_ctf/lib/python3.13/site-packages/numpy/f2py/tests/src/f2cmap/.f2py_f2cmap
+/home/snickerdoodle/.bashrc.original
+/home/snickerdoodle/.viminfo
+/home/snickerdoodle/.vboxclient-display-svga-x11-tty7-control.pid
+/home/snickerdoodle/.cache/ghidra/fscache2/.lastmaint
+/home/snickerdoodle/.cache/vscode-cpptools/bef268c7d5957835c63b268165e64f39/.browse.VC.db
+/home/snickerdoodle/.vboxclient-draganddrop-tty7-service.pid
+/home/snickerdoodle/threat_hunter/linux-threat-hunter/.gitignore
+/home/snickerdoodle/.profile
+/home/snickerdoodle/.zprofile
+/home/snickerdoodle/.wget-hsts
+/home/snickerdoodle/.config/BraveSoftware/Brave-Browser/.org.chromium.Chromium.bzJqSM
+/home/snickerdoodle/.config/BraveSoftware/Brave-Browser/.org.chromium.Chromium.uarHzK
+/home/snickerdoodle/.face
+/home/snickerdoodle/.java/.userPrefs/.user.lock.kali
+/home/snickerdoodle/.java/.userPrefs/.userRootModFile.kali
+/home/snickerdoodle/.java/.userPrefs/.userRootModFile.snickerdoodle
+/home/snickerdoodle/.java/.userPrefs/.user.lock.snickerdoodle
+/home/snickerdoodle/.vboxclient-draganddrop-tty7-control.pid
+/home/snickerdoodle/webexploit/.htaccess
+/home/snickerdoodle/.Xauthority
+/home/snickerdoodle/.vboxclient-vmsvga-session-tty7-service.pid
+/home/snickerdoodle/.sudo_as_admin_successful
+/home/snickerdoodle/.bash_logout
+/home/snickerdoodle/.vboxclient-seamless-tty7-control.pid
+/home/snickerdoodle/.ICEauthority
+/home/snickerdoodle/.vboxclient-clipboard-tty7-control.pid
+/home/snickerdoodle/.vscode/extensions/ms-python.python-2026.4.0-linux-x64/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-pylance-2026.1.1/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/.obsolete
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-python-envs-1.20.1-linux-x64/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-python-envs-1.20.1-linux-x64/.nvmrc
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-python-envs-1.20.1-linux-x64/build/.mocha.unittests.json
+/home/snickerdoodle/.vscode/extensions/ms-azuretools.vscode-containers-2.4.1/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-azuretools.vscode-containers-2.4.1/resources/templates/.dockerignore.template
+/home/snickerdoodle/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.config/guardian/.gdnbaselines
+/home/snickerdoodle/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_frame_eval/.gitignore
+/home/snickerdoodle/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/.gitignore
+/home/snickerdoodle/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.flake8
+/home/snickerdoodle/.vscode/extensions/ms-vscode.cpp-devtools-0.3.6/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-vscode-remote.remote-containers-0.447.0/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-vscode-remote.remote-containers-0.447.0/scripts/inspect-volume/.devcontainer.json
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-pylance-2026.2.1/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-vscode.cpp-devtools-0.4.6/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-vscode.cpptools-1.30.5-linux-x64/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-python-envs-1.24.0-linux-x64/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-python-envs-1.24.0-linux-x64/.nvmrc
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-python-envs-1.24.0-linux-x64/build/.mocha.unittests.json
+/home/snickerdoodle/.vscode/extensions/ms-python.vscode-python-envs-1.24.0-linux-x64/pythonEnvironmentsApi/.npmignore
+/home/snickerdoodle/.vscode/extensions/ms-vscode.cpptools-themes-2.0.0/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-vscode.cpptools-themes-2.0.0/.gitignore
+/home/snickerdoodle/.vscode/extensions/ms-vscode.cmake-tools-1.22.28/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-python.python-2026.2.0-linux-x64/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-vscode.cpptools-1.31.3-linux-x64/.vsixmanifest
+/home/snickerdoodle/.vscode/extensions/ms-vscode.cpptools-extension-pack-1.5.1/.vsixmanifest
+/home/snickerdoodle/.wine/.update-timestamp
+/home/snickerdoodle/.zshrc
+/home/snickerdoodle/.vboxclient-vmsvga-session-tty7-control.pid
+/home/snickerdoodle/.vboxclient-hostversion-tty7-control.pid
+/home/snickerdoodle/.maltego/v4.11.1/config/Windows2Local/Modes/.nbattrs
+/home/snickerdoodle/.bashrc
+/home/snickerdoodle/.vboxclient-seamless-tty7-service.pid
+/home/snickerdoodle/.xsession-errors
+/home/snickerdoodle/.zsh_history
+/home/snickerdoodle/my-vpn/CyberTunnel_backup/.gitignore
+/home/snickerdoodle/my-vpn/CyberTunnel_backup/venv/.gitignore
+/home/snickerdoodle/my-vpn/CyberTunnel/.gitignore
+/home/snickerdoodle/my-vpn/CyberTunnel/venv/.gitignore
+/home/snickerdoodle/.gitconfig
+
+[+] Hidden Directories in /tmp:
+/tmp/.font-unix
+/tmp/.XIM-unix
+/tmp/.ICE-unix
+/tmp/.X11-unix
+
+[+] Suspicious Hidden Files:
