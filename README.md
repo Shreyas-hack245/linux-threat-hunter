@@ -1,8 +1,12 @@
 # Linux Threat Hunter
 
-Linux Threat Hunter is a SOC-inspired Blue Team security toolkit developed for Linux environments using Bash scripting. The project focuses on threat hunting, security monitoring, and incident response by identifying suspicious processes, persistence mechanisms, authentication anomalies, hidden files, and unusual network activity.
+### Blue Team Security Toolkit for Linux Threat Hunting and Incident Response
 
-Designed and tested on Kali Linux, the toolkit automates multiple security checks commonly performed during defensive security operations and system investigations.
+Linux Threat Hunter is a Blue Team security toolkit built using Bash scripting for Linux systems. It helps detect suspicious processes, failed login attempts, hidden files, unusual network connections, persistence mechanisms, and possible malware activity.
+
+The toolkit automates several security checks commonly used during Linux threat hunting and incident response. It also provides an interactive terminal interface, automated report generation, activity logging, and real-time monitoring features.
+
+Developed and tested on Kali Linux.
 
 ---
 
@@ -17,10 +21,10 @@ Designed and tested on Kali Linux, the toolkit automates multiple security check
 - Malware Keyword Scanning
 - Rootkit Detection
 - System Information Gathering
-- Real-Time Monitoring Mode
+- Real-Time Monitoring
 - Automated Report Generation
 - Activity Logging
-- SOC-Style Interactive Dashboard
+- Interactive SOC-Style Dashboard
 
 ---
 
@@ -38,25 +42,6 @@ Designed and tested on Kali Linux, the toolkit automates multiple security check
 
 ---
 
-## Project Structure
-
-```bash
-linux-threat-hunter/
-│
-├── scripts/
-├── logs/
-├── reports/
-├── screenshots/
-├── docs/
-│
-├── main.sh
-├── install.sh
-├── README.md
-└── LICENSE
-```
-
----
-
 ## Installation
 
 Clone the repository:
@@ -65,13 +50,13 @@ Clone the repository:
 git clone https://github.com/yourusername/linux-threat-hunter.git
 ```
 
-Navigate into the project directory:
+Navigate to the project directory:
 
 ```bash
 cd linux-threat-hunter
 ```
 
-Make all scripts executable:
+Grant execution permissions:
 
 ```bash
 chmod +x main.sh
@@ -82,57 +67,60 @@ Install required dependencies:
 
 ```bash
 sudo apt update
-sudo apt install -y net-tools lsof chkrootkit
+sudo apt install -y net-tools lsof chkrootkit dos2unix
+```
+
+Convert Windows line endings if required:
+
+```bash
+dos2unix main.sh
+dos2unix scripts/*.sh
 ```
 
 ---
 
 ## Usage
 
-Run the toolkit:
+Run the toolkit using:
 
 ```bash
 ./main.sh
 ```
 
+Select the required module from the interactive dashboard to perform threat hunting and security analysis operations.
+
 ---
 
-## Detection Modules
+## Available Modules
 
-| Module | Purpose |
+| Module | Description |
 |---|---|
-| Process Scan | Detect suspicious processes |
-| Failed Login Detection | Identify failed authentication attempts |
-| Open Ports Scanner | Detect active listening ports |
-| Hidden Files Detection | Discover hidden files and directories |
-| Cron Persistence Detection | Identify suspicious scheduled tasks |
-| Network Monitoring | Monitor active network connections |
-| Malware Scanner | Search for suspicious malware-related keywords |
-| Rootkit Detection | Perform rootkit checks |
-| System Information | Collect host system information |
-
----
-## Dashboard Preview
-
-Add screenshots of the toolkit interface inside the `screenshots/` directory and reference them here.
-
-```markdown
-![Dashboard](screenshots/dashboard.png)
-```
+| Process Scan | Detects suspicious running processes |
+| Failed Login Detection | Monitors failed authentication attempts |
+| Open Ports Scanner | Identifies active listening ports |
+| Hidden Files Detection | Discovers hidden files and directories |
+| Cron Persistence Detection | Detects suspicious cron jobs |
+| Network Connections Monitoring | Monitors active network connections |
+| Malware Keyword Scanner | Searches for suspicious malware-related keywords |
+| Rootkit Detection | Performs rootkit checks |
+| System Information | Displays host system information |
+| Real-Time Monitoring | Continuously monitors suspicious activity |
+| Full Scan & Report | Executes all modules and generates reports |
 
 ---
 
 ## Future Enhancements
 
-- JSON Report Generation
-- Email Alert System
+- JSON-Based Reporting
 - SIEM Integration
-- Threat Intelligence Support
+- Email Alert System
 - File Integrity Monitoring
-- Real-Time Alerting
-- Web-Based Dashboard
+- Threat Intelligence Integration
+- Web-Based Monitoring Dashboard
+- Real-Time Alerting System
 
 ---
+
 ## Disclaimer
 
 This project is intended strictly for educational purposes and authorized security testing only.
@@ -142,4 +130,3 @@ This project is intended strictly for educational purposes and authorized securi
 ## Author
 
 Shreyas
-
