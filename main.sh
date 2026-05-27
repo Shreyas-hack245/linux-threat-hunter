@@ -4,7 +4,6 @@
 #           LINUX THREAT HUNTER
 # ==========================================
 # Blue Team Security Toolkit
-# made by shreyas
 # ==========================================
 
 # COLORS
@@ -20,7 +19,7 @@ RESET="\e[0m"
 TIME=$(date +"%Y-%m-%d_%H-%M-%S")
 REPORT="reports/threat_report_$TIME.txt"
 
-# Threat Counters
+# THREAT COUNTERS
 HIGH=0
 MEDIUM=0
 LOW=0
@@ -28,7 +27,7 @@ LOW=0
 clear
 
 # ==========================================
-# BANNER
+# ASCII BANNER
 # ==========================================
 
 echo -e "${CYAN}"
@@ -50,12 +49,12 @@ echo "╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   �
 
 echo -e "${RESET}"
 
-echo -e "${CYAN}┌──────────────────────────────────────────────┐${RESET}"
-echo -e "${CYAN}│${RESET}      ${GREEN}Linux Threat Hunter${RESET}                 ${CYAN}│${RESET}"
-echo -e "${CYAN}│${RESET}    ${BLUE}Blue Team Security Toolkit${RESET}            ${CYAN}│${RESET}"
-echo -e "${CYAN}│${RESET}         ${YELLOW}made by shreyas${RESET}                  ${CYAN}│${RESET}"
-echo -e "${CYAN}└──────────────────────────────────────────────┘${RESET}"
-
+echo ""
+echo -e "${CYAN}=================================================${RESET}"
+echo -e "${GREEN}               Linux Threat Hunter${RESET}"
+echo -e "${BLUE}        Blue Team Security Toolkit${RESET}"
+echo -e "${YELLOW}                  Shreyas${RESET}"
+echo -e "${CYAN}=================================================${RESET}"
 echo ""
 
 # ==========================================
@@ -184,12 +183,13 @@ case $choice in
         echo -e "${GREEN}[+] Report Saved:${RESET} $REPORT"
 
         echo "$(date) - Full Threat Hunt Executed" >> logs/activity.log
-            echo ""
-echo "========== Threat Summary =========="
-echo "HIGH Threats   : $HIGH"
-echo "MEDIUM Threats : $MEDIUM"
-echo "LOW Threats    : $LOW"
-echo "===================================="
+
+        echo ""
+        echo "========== Threat Summary =========="
+        echo "HIGH Threats   : $HIGH"
+        echo "MEDIUM Threats : $MEDIUM"
+        echo "LOW Threats    : $LOW"
+        echo "===================================="
 
         ;;
 
